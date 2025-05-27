@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/e60dbeeb-a382-4258-a608-62bb721767d0-loader.js" ></script>
-   <title>MY-FORM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PRD   <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/b9035013-d003-4fc8-95bb-0bd754aecd2a-loader.js" ></script> -->
+
+    <!-- STG --> <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/71e15ee1-6c76-47a6-a66c-c7b568174895-loader.js" ></script>
+
+
+    <!--LOCAL<script type="text/javascript" async src="https://dk9suync0k2va.cloudfront.net/js/loader-scripts/b0379229-e835-4cf4-a94a-3263853fad0b-loader.js" ></script>-->
+ 
+    <title>MY-FORM</title>
 </head>
+
 <body>
-<!--     <form id="rd-form" method="post" name="meu_formulário_sabta">
+<div role="main" id="form-tel-field-2b0dc3f16db80dbe2484"></div><script type="text/javascript" src="https://d2umgtt5tsqx05.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script><script type="text/javascript"> new RDStationForms('form-tel-field-2b0dc3f16db80dbe2484', 'null').createForm();</script>
+    <!-- <form id="rd-form" method="post" meu_formulário_sabta_teste="meu_formulário_sabta_teste">
         <label for="name">Nome</label>
         <input type="text" id="name" name="name" required>
 
@@ -16,34 +25,35 @@
 
         <button type="submit">Enviar</button>
     </form> -->
-       <div role="main" id="resultadosdigitais-1bdbb882139a7d6da979"></div>
-    <script type="text/javascript" src="https://d2umgtt5tsqx05.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js">
-    </script><script type="text/javascript"> new RDStationForms('resultadosdigitais-1bdbb882139a7d6da979', 'null').createForm();</script>
+    <!--Formulário Embutido -->
+
 </body>
+
 <!-- <script>
-  document.getElementById('rd-form').addEventListener('submit', async function (event) {
-    event.preventDefault();
+    document.getElementById('rd-form').addEventListener('submit', async function (event) {
+        event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
 
 
-    try {
-        const response = await fetch('http://127.0.0.1:5000/api/send-to-rd', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(data),
-        });
+        try {
+            const response = await fetch('http://127.0.0.1:5000/api/send-to-rd', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
 
-        const result = await response.json();
-        console.log('sucesso front', result)
-        alert(result.mensagem);
+            const result = await response.json();
+            console.log('sucesso front', result)
+            alert(result.mensagem);
 
-    } catch (error) {
-        alert('Erro ao enviar os dados. Tente novamente');
-        console.log(error)
-    }
-  })
+        } catch (error) {
+            alert('Erro ao enviar os dados. Tente novamente');
+            console.log(error)
+        }
+    })
 
 </script> -->
+
 </html>
